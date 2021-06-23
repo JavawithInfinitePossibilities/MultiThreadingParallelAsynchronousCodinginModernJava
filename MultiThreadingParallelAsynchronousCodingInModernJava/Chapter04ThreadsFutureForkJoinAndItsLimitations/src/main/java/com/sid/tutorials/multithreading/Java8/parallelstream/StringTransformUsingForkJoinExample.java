@@ -21,8 +21,8 @@ public class StringTransformUsingForkJoinExample extends RecursiveTask<List<Stri
 	@Override
 	protected List<String> compute() {
 		List<String> resultList = new ArrayList<String>();
-		//if (inputList.size() > 1) {
-		if (inputList.size() > noOfThreads) {
+		if (inputList.size() > 1) {
+		//if (inputList.size() > noOfThreads) {
 			int midlist = inputList.size() / 2;
 			ForkJoinTask<List<String>> leftFork = new StringTransformUsingForkJoinExample(inputList.subList(0, midlist),
 					noOfThreads);

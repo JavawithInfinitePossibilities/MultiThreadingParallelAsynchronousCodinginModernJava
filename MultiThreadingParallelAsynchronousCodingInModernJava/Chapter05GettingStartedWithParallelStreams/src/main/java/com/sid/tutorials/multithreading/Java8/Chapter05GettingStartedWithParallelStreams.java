@@ -25,14 +25,16 @@ public class Chapter05GettingStartedWithParallelStreams {
 	public void parallelAndSequential(boolean isParallel) {
 		DataSet dataSet = DataSet.builder().build();
 		List<String> namesList = dataSet.getNameList();
+		List<String> namesListUpperCase=null;
 		System.out.println("namesList : " + namesList);
 		Stream<String> nameStream = namesList.stream();
 		if (isParallel) {
 			nameStream = nameStream.parallel();
 		}
 		startTime(true);
-		List<String> namesListUpperCase = nameStream.map(name -> dataSet.addNameLengthTransform(name))
-				.collect(Collectors.toList());
+		//namesListUpperCase = nameStream.map(name -> dataSet.addNameLengthTransform(name)).collect(Collectors.toList());
+		// Example of object reference
+		namesListUpperCase = nameStream.map(dataSet::addNameLengthTransform).collect(Collectors.toList());
 		timeTaken();
 		LoggerUtil.log("namesListUpperCase : " + namesListUpperCase);
 	}

@@ -128,5 +128,12 @@
 		<module>
 			Chapter14-Exception-HandlingRecovery-in-CompletableFuture
 		</module>
+		<module>
+			Chapter15-Implement-Exception-HandlingRecovery-in-ProductService
+		</module>
+		<module>Chapter16-CompletableFuture-Threadpool</module>
+		<module>
+			Chapter17-Threads-and-Async-Overloaded-Methods-in-CompletableFuture
+		</module>
 	</modules>
 </project>

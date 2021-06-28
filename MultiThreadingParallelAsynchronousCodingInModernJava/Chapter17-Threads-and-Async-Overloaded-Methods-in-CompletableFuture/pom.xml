@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.sid.tutorials.multithreading.Java8</groupId>
+		<artifactId>MultiThreadingParallelAsynchronousCodingInModernJava</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>Chapter17-Threads-and-Async-Overloaded-Methods-in-CompletableFuture</artifactId>
+	<packaging>war</packaging>
+	<name>17. Threads and Async Overloaded Methods in CompletableFuture</name>
+	<description>17. Threads and Async Overloaded Methods in CompletableFuture</description>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<Project.name>Chapter17-Threads-and-Async-Overloaded-Methods-in-CompletableFuture</Project.name>
+	</properties>
+</project>
